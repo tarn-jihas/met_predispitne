@@ -1,0 +1,42 @@
+---ORDER START---
+Order ID: c3db1760-3513-4baf-a309-e7dfbff31f65
+User ID: a0f51b4e-5cb3-4fc6-bc40-00daf11c399d
+Address: null
+Delivery User ID: null
+Status: CREATED
+Products:
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+Total: 2400.0
+---ORDER END---
+
+---ORDER START---
+Order ID: ec2de456-bb83-4ccc-bf11-0f13152db705
+User ID: 7228f49e-221e-4a61-9ced-57854120a37b
+Address: stra@hi.com
+Delivery User ID: f8857c06-0fde-41c6-b258-18db8eb90381
+Status: DELIVERED
+Products:
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+  - Product{id=808c21c3-74a2-4288-bd9b-0148f331005b, name='Hello', price=120.0, category=FOOD}
+Total: 240.0
+---ORDER END---
+
