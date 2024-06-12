@@ -49,7 +49,7 @@ public class Main {
     IProductService<Product> productService = new ProductService(productRepository);
     userService = new UserService(userRepository);
 
-    orderingSystem = OrderingSystem.getInstance(orderService, productService, userShow, userInput,
+    orderingSystem = OrderingSystem.getInstance(orderService, productService, userInput,
         userService);
   }
 
@@ -267,7 +267,7 @@ public class Main {
     }
 
     @Override
-    public void showClientMenu() throws FileWriteException, FileReadException {
+    public void showClientMenu() throws FileReadException {
       clientMenu();
     }
 

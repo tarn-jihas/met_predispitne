@@ -41,10 +41,6 @@ public class DeliveryUser extends UserBase {
     order.setDeliveryUserId(this.getId());
   }
 
-  public void removeOrder(Order order) {
-    this.order = null;
-  }
-
   @Override
   public String convertUserToString() {
     StringBuilder sb = new StringBuilder(super.convertUserToString());

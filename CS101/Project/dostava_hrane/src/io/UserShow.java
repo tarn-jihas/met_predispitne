@@ -17,7 +17,7 @@ public class UserShow implements IUserShow {
   public void listAllDeliveryUsers(List<DeliveryUser> dostavljaci) {
     for (DeliveryUser d : dostavljaci) {
       System.out.println(
-          "Dostavljač ID: " + d.getId() + ", Dostupnost: " + (d.isAvailable() ? "Da" : "Ne"));
+          "Delivery ID: " + d.getId() + ", Available: " + (d.isAvailable() ? "Yes" : "No"));
     }
   }
 

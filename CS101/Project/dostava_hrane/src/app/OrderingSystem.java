@@ -3,7 +3,6 @@ package app;
 import handlers.exceptions.FileReadException;
 import handlers.exceptions.FileWriteException;
 import io.IUserInput;
-import io.IUserShow;
 import model.*;
 import service.IOrderService;
 import service.IProductService;
@@ -22,7 +21,7 @@ public class OrderingSystem {
 
 
   private OrderingSystem(IOrderService<Order> orderService, IProductService<Product> productService,
-      IUserShow prikazKorisniku, IUserInput userInput, IUserService userService) {
+      IUserInput userInput, IUserService userService) {
     this.orderService = orderService;
     this.productService = productService;
     this.userInput = userInput;
@@ -30,18 +29,18 @@ public class OrderingSystem {
   }
 
   public static OrderingSystem getInstance(IOrderService<Order> orderService,
-      IProductService<Product> productService, IUserShow prikazKorisniku, IUserInput unosKorisnika,
+      IProductService<Product> productService, IUserInput unosKorisnika,
       IUserService userService) {
     if (instance == null) {
-      instance = new OrderingSystem(orderService, productService, prikazKorisniku, unosKorisnika,
+      instance = new OrderingSystem(orderService, productService, unosKorisnika,
           userService);
     }
     return instance;
   }
 
   public void createOrder(UUID userId, String address)
-      throws FileReadException, FileWriteException {
-    List<Product> products = List.of();
+      throws FileWriteException {
+    List<Product> products;
     try {
       products = productService.showAllProducts();
 
