@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strahinja Kešelj 6159</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="ime">Strahinja Kešelj 6159</h1>
+    <h2>CS105 - Osnove Web Tehnologija</h2>
+
+    <form id="gradeForm">
+        <h3>Predispitne obaveze:</h3>
+        <div id="homeworkContainer"></div>
+        <label for="projectPoints">Projektni zadatak:</label>
+        <input type="number" id="projectPoints" required><br>
+        <label for="negativePoints">Ukupan broj negativnih poena:</label>
+        <input type="number" id="negativePoints" required><br>
+        <button type="button" id="checkCondition">Proveri uslov</button>
+    </form>
+
+    <div id="result"></div>
+
+    <form id="examForm">
+        <label for="examPoints">Broj poena sa ispita:</label>
+        <input type="number" id="examPoints" required><br>
+        <button type="button" id="calculateGrade">Izračunaj ocenu</button>
+    </form>
+
+    <div id="gradeResult"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

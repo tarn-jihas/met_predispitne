@@ -1,0 +1,11 @@
+Opis domaćeg zadatka - DZ12
+Uradite sledeće
+Očekivano vreme izrade zadatka: 40 minuta
+
+Koristeći HTML napraviti web sajt prezentaciju predmeta CS105.
+
+Svaka stranica sadrži meni.
+Postaviti željenu sliku kao pozadinu na svim web stranama ili osmisliti adekvatno zaglavlje. Pozadina i zaglavlje treba da budu konzistentni na svim stranicama.
+Kreirati stranu "Poeni". Na ovoj strani napraviti formu za unos predispitnih poena studenta na predmetu CS105. Nakon unosa podataka, korisnik klikne na dugme "Unesi". Klikom na ovo dugme, podaci iz forme se ubacuju u tabelu sa poenima koja se nalazi na istoj stranici. Forma treba da sadrži id, indeks studenta, ime studenta, prezime studenta, šifra predmeta i broj poena. Dodajte dugme za pražnjenje tabele. Klikom na dugme obrisati sve redove tabele.
+Kreirati stranu “CS105" na kojoj će u dva paragrafa biti ispisan opis predmeta CS015. Kreirajte jednu proizvoljnu funkcionalnost u JavaScript-u koja se javlja kada korisnik pređe mišem preko prvog paragrama I drugu koja se javlja kada korisnik klikne na drugi paragraph.
+Zadatak dostaviti kao arhivu CS105-DZ12-Ime_Prezime_BrojIndeksa.zip. Arhiva treba da sadrži sve fajlove(html I js). Domaći zadatak pošaljite predmetnom asistentu na e-mail. Subject mail-a je CS105-DZ12.

@@ -1,0 +1,21 @@
+Opis domaćeg zadatka - DZ05
+Kreirajte navedene HTML stranice
+Predviđeno vreme izrade zadatka je 40 minuta.
+Kreirajte dve HTML stranice:
+Obe stranice imaju odgovarajući navigacioni meni:
+Meni prikazuje drugačiju stilizaciju za aktivnu stranicu
+Prikažite drugačiju stilizaciju za link preko kog korisnik prelazi mišem
+Studenti sa parnim brojem indeksa kreiraju horizontalni meni, studenti sa neparnim brojem indeksa kreiraju vertikalni meni.
+Stranice i elementi moraju da budu responzivni.
+Tematika stranica mora da bude ista kao i za DZ03 i DZ04. Tekst i slike moraju da odgovaraju izabranoj tematici (ne koristite Lorem Ipsum tekst).
+Raspored na stranicama osmislite samostalno u skladu sa ostalim zahtevima.
+Jedna strana mora da sadrži listu sa minimum 5 elementa. Lista odgovara tematici. Stilizujte listu.
+Na stranicama prikažite minimum 3 različita block elemenata na kojima ćete primeniti traženu stilizaciju.
+Studenti sa parnim brojem indeksa moraju na jednom elementu da iskoriste vertikalni režim pisanja, a studenti sa neparnim brojem indeksa horizontalni režim pisanja.
+Studenti sa parnim brojem indeksa moraju na jednom elementu da iskoriste senku teksta, dok studenti sa neparnim brojem indeksa moraju da iskoriste senku sa zamućenjem na jednom elementu.
+Obavezno iskoristite dekoraciju teksta (definišite tip, poziciju, debljinu i boju).
+Kreirajte klasu za koju ćete definisati svojstva fonta i koju ćete iskoristit za minimum 1 element: font-style, font-variant, font-weight, font-size, line-height i font-family (možete koristiti shorthand).
+Definišite klase i prikažite njihovu upotrebu na html elementima za dva od sledećih tekstualnih efekata: text-justify, text-overflow, word-break i word-wrap.
+Iskoristite minimum 3 različite boje.
+Zadatak dostaviti kao arhivu CS105-DZ05-Ime_Prezime_BrojIndeksa.zip. Arhiva treba da sadrži dva HTML fajla: prva.html i druga.html. Domaći zadatak pošaljite predmetnom asistentu na e-mail.Subject mejla mora biti CS105-DZ05.
+

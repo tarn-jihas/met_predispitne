@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planete</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 600px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 0;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        #planetInfo {
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        const planets = [
+            { name: "Mercury", image: "https://images-assets.nasa.gov/image/PIA13508/PIA13508~orig.jpg" },
+            { name: "Venus", image: "https://images-assets.nasa.gov/image/PIA00271/PIA00271~orig.jpg" },
+            { name: "Earth", image: "https://images-assets.nasa.gov/image/PIA18033/PIA18033~orig.jpg" },
+            { name: "Mars", image: "https://images-assets.nasa.gov/image/PIA00407/PIA00407~orig.jpg" },
+            { name: "Jupiter", image: "https://images-assets.nasa.gov/image/PIA00343/PIA00343~orig.jpg" },
+            { name: "Saturn", image: "https://images-assets.nasa.gov/image/PIA01364/PIA01364~orig.jpg" },
+            { name: "Uranus", image: "https://images-assets.nasa.gov/image/PIA18182/PIA18182~orig.jpg" },
+            { name: "Neptune", image: "https://images-assets.nasa.gov/image/PIA01492/PIA01492~orig.jpg" }
+        ];
+
+        function displayRandomPlanet() {
+            const randomIndex = Math.floor(Math.random() * planets.length);
+            const planet = planets[randomIndex];
+
+            const planetInfo = document.getElementById("planetInfo");
+            planetInfo.innerHTML = `
+                <h2>${planet.name}</h2>
+                <img src="${planet.image}" alt="${planet.name}">
+            `;
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const loadButton = document.querySelector("button");
+            loadButton.addEventListener("click", displayRandomPlanet);
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Destinacija</h1>
+        <h2>Planeta</h2>
+        <button>Ucitaj nasumicnu planetu</button>
+        <div id="planetInfo"></div>
+    </div>
+</body>
+
+</html>

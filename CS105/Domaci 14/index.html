@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegantni Satovi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picocss/1.5.10/pico.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-card {
+            flex: 1 1 200px;
+            border: 1px solid;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        #wishlist {
+            margin-top: 40px;
+            border: 1px solid;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        #wishlist-items li {
+            list-style: none;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 15px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px 0;
+            background-color: var(--background-color);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container">
+        <ul>
+            <li><strong>Elegantni Satovi</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#home">Početna</a></li>
+            <li><a href="#products">Proizvodi</a></li>
+            <li><a href="#about">O nama</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <h1>Dobrodošli u Elegantne Satove</h1>
+
+        <section id="products">
+            <h2>Naši proizvodi</h2>
+            <div class="product-list" id="product-list">
+
+            </div>
+        </section>
+
+        <section id="wishlist">
+            <h2>Lista želja</h2>
+            <ul id="wishlist-items">
+
+            </ul>
+            <p>Ukupna cena: <span id="total-price">0</span> RSD</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div style="display: flex; justify-content: space-between;">
+                <div>
+                    <h5>Elegantni Satovi</h5>
+                    <p>Vaš izvor za vrhunske satove i dodatke.</p>
+                </div>
+                <div>
+                    <h5>Linkovi</h5>
+                    <ul>
+                        <li><a href="#!">FAQ</a></li>
+                        <li><a href="#!">Dostava</a></li>
+                        <li><a href="#!">Povrat</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Kontakt</h5>
+                    <ul>
+                        <li>Adresa: Ulica 123</li>
+                        <li>Telefon: 011 1231 4156</li>
+                        <li>Email: satovi@satovi.rs</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 20px;">© 2024 Elegantni Satovi</p>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            const products = [
+                { id: 1, name: "Klasični Analogni Sat", price: 15000 },
+                { id: 2, name: "Sportski Digitalni Sat", price: 12000 },
+                { id: 3, name: "Luksuzni Automatski Sat", price: 50000 },
+                { id: 4, name: "Luksuzni Pametni Sat", price: 30000 }
+            ];
+
+            const wishlist = [];
+
+            function displayProducts() {
+                const productList = $("#product-list");
+                productList.empty();
+                products.forEach(product => {
+                    productList.append(`
+                        <div class="product-card">
+                            <h3>${product.name}</h3>
+                            <p>Cena: ${product.price} RSD</p>
+                            <button class="add-to-wishlist" data-id="${product.id}">Dodaj u listu želja</button>
+                        </div>
+                    `);
+                });
+            }
+
+            function updateWishlist() {
+                const wishlistItems = $("#wishlist-items");
+                wishlistItems.empty();
+                let totalPrice = 0;
+                wishlist.forEach(product => {
+                    wishlistItems.append(`
+                        <li>
+                            ${product.name} - ${product.price} RSD
+                            <button class="remove-from-wishlist" data-id="${product.id}">Ukloni</button>
+                        </li>
+                    `);
+                    totalPrice += product.price;
+                });
+                $("#total-price").text(totalPrice);
+            }
+
+            displayProducts();
+
+            $(document).on("click", ".add-to-wishlist", function () {
+                const productId = $(this).data("id");
+                const product = products.find(p => p.id === productId);
+                if (product && !wishlist.some(p => p.id === productId)) {
+                    wishlist.push(product);
+                    updateWishlist();
+                }
+            });
+
+            $(document).on("click", ".remove-from-wishlist", function () {
+                const productId = $(this).data("id");
+                const index = wishlist.findIndex(p => p.id === productId);
+                if (index !== -1) {
+                    wishlist.splice(index, 1);
+                    updateWishlist();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

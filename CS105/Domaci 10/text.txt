@@ -1,0 +1,55 @@
+Očekivano vreme izrade zadatka: 40 min.
+
+Kreirajte 4 html stranica. Svaka stranica ima konzistentan meni, footer (sa imenom, prezimenom I brojem indeksa) I odgovarajući naslov. Stranice su:
+
+Stranica zadatak1.html na kojoj ćete prikazati rešenje zadatka iz GRUPE 1. Obezbedite odgovarajuća polja za unos I dugme za poziv funkcije. Rezultat prikažite na stranici (ne konzoli).
+Stranica zadatak2.html na kojoj ćete prikazati rešenje zadataka iz GRUPE 2. Rezultat prikažite na stranici (ne konzoli).
+Stranica zadatak3html na kojoj ćete prikazati rezultate sledećeg:
+Kreirajte niz od 5 proizvoljnih objekata sa po minimum 3 svojstva. Objekti moraju da se razlikuju od onoga što je prikazano u okviru lekcije
+Sortirajte niz objekata prema proizvoljnom svojstvu u obrnutom abecednom redosledu. Prikažite niz pre i posle sortiranja.
+Kreirajte funkciju koja će proveriti da li su dva objekta identična (ista svojstva, iste vrednosti). Od prethodno kreiranih 5 objekata izaberite 2 nad kojima ćete testirati funkciju. Prikažite rezultate funkcije.
+Kreirajte funkciju koja će proveriti da li je objekat prazan (nema svojstva). Od prethodno kreiranih 5 objekata izaberite 1 nad kojim ćete testirati funkciju.Prikažite rezultate funkcije.
+Stranica zadatak4html na kojoj ćete prikazati rezultate sledećeg:
+Kreirajte objekat TekuciRacun, koji ima minimum svojstva brojRacuna, stanje I metodu koja ispisuje broj I stanje na računu u proizvoljnom format.
+Kreirajte funkciju uplata kojom ćete dodavati sredstva na račun.
+Kreirajte funkciju isplata kojom ćete smanjivanji sredstva na računu. Obratite pažnju da nije moguće isplatiti više novca nego što je dostupno.
+Obezbedite korisniku polje za unos iznosa I dva dugmeta "UPLATI" I "ISPLATI". Klikom na dugme poziva se odgovarajuća funkcija I stanje na računu se menja za iznos koji je korisnik naveo u input polju. Nakon svake izmene ispišite korisniku trenutno stanje računa (pozovite metodu objekta).
+
+Grupa zadataka 1
+Zadatak iz GRUPE 1 birate prema sledećoj formuli: brIndeksa % 7 + 1.
+Zadatak iz GRUPE 1 birate prema sledećoj formuli: brIndeksa % 7 + 1. Na primer: 5231 % 7 = 2, 2+1=3, student radi zadatak 3.
+
+GRUPA 1:
+
+Napisati JS program koji će proveriti da li je uneseni string palindrom. Ignorisati whitespace karaktere. Potrebno je omogućiti unos teksta i dugme kojim se poziva funkcija.
+Napisati JS program koji će reči na početku rečenice u unesenom tekstu pretvoriti u velika slova. Potrebno je omogućiti unos teksta i dugme kojim se poziva funkcija.
+Napisati JS program koji će proveriti i ispisati prvo slovo koje se ne ponavlja u unesenom stringu. Na primer, u stringu „aaabbbbcaa“ rezultat je karakter „c“. Potrebno je omogućiti unos teksta i dugme kojim se poziva funkcija.
+Napisati JS program koji će prebrojati koliko se puta ponavlja svaki karakter u unesenom stringu. Potrebno je omogućiti unos teksta i dugme kojim se poziva funkcija.
+Napisati JS program koji prihvata broj kao ulaz i umeće crtice (-) između svakog parnog broja. Potrebno je omogućiti unos teksta i dugme kojim se poziva funkcija.
+Napisati JS program koji prihvata String kao ulaz i menja velika i mala slova svakog znaka. Na primer, ako unesete "Metropolitan", izlaz bi trebao biti "mETROPOLITAN".Potrebno je omogućiti unos teksta i dugme kojim se poziva funkcija.
+Napisati JS program koji prihvata String kao ulaz i pronalazi definisan broj karaktera iz string-a. Potrebno je omogućiti unos teksta i broja karaktera i dugme kojim se poziva funkcija.
+
+Grupa zadataka 2
+Zadatak iz GRUPE 2 birate prema sledećoj formuli: brIndeksa % 15 + 1.
+Zadatak iz GRUPE 2 birate prema sledećoj formuli: brIndeksa % 15 + 1. Na primer: 5231 % 15 = 11, 11+1=12, student radi zadatak 12.
+
+GRUPA 2:
+1. Napisati JS program koji sortira niz elemenata koristeći Bubble sort. Kreirajte sami proizvoljan niz od minimum 7 elemenata.
+2. Napisati JS program koji ispisuje indekse brojeva koji su veći od prosečne vrednosti brojeva u nizu. Kreirajte sami proizvoljan niz od minimum 7 elemenata.
+3. Napisati JS program koji pronalazi prvih N elemenata niza. Kreirajte sami proizvoljan niz od minimum 7 elemenata. Pronađite prvih 3 elementa niza.
+4. Napisati JS program koji pronalazi najčešću vrednost u nizu. Kreirajte sami proizvoljan niz od minimum 7 elemenata. Prikažite koji je element u pitanju i koliko puta se ponavlja.
+5. Napisati JS program koji pronalazi i uklanja duplikate iz niza (ignorisati case sensitivity). Kreirajte sami proizvoljan niz od minimum 7 elemenata.
+6. Napisati JS program koji pronalazi par elemenata (indeksa dva broja) u datom nizu čiji je zbir jednak određenom ciljnom broju. Kreirajte sami proizvoljan niz od minimum 7 elemenata. Zadajte proizvoljan ciljni broj.
+7. Napisati JS program koji pronalazi presek dva niza. Kreirajte sami dva proizvoljna niza od minimum 7 elemenata.
+8. Napisati JS program koji pronalazi par elemenata (indeksa dva broja) u datom nizu čiji je zbir jednak određenom ciljnom broju. Kreirajte sami proizvoljan niz od minimum 7 elemenata. Zadajte proizvoljan ciljni broj.
+9. Napisati JS program koji uklanja zadat element iz niza. Kreirajte sami proizvoljan niz od minimum 7 elemenata. Zadajte element koji je potrebno ukloniti.
+10. Napisati JS program koji uzima dva niza iste dužine i sabira vrednosti na istim pozicijama i upisuje ih u novi niz. Kreirajte sami dva proizvoljna niza od minimum 7 elemenata.
+11. Napisati JS program koji pronalazi razliku dva niza (elementi prvog niza koji se ne pojavljuju u drugom nizu). Kreirajte sami dva proizvoljna niza od minimum 7 elemenata.
+12. Napisati JS program koji pomera element niza sa jedne na drugu poziciju. Kreirajte sami proizvoljan niz od minimum 7 elemenata. Zadajte sa koje pozicije i na koju je potrebno pomeriti element.
+13. Napisati JS program koji pronalazi jedinstvene elemente u oba niza. Kreirajte sami dva proizvoljna niza od minimum 7 elemenata.
+14. Napisati JS program koji pronalazi sve permutacije elemenata niza (uključujući i duplikate). Kreirajte sami proizvoljan niz od 4 elemenata.
+15. Napisati JS program koji pronalazi uniju dva niza. Kreirajte sami dva proizvoljna niza od minimum 7 elemenata.
+
+
+Zadatak dostaviti kao arhivu CS105-DZ10-Ime_Prezime_BrojIndeksa.zip. Arhiva treba da sadrži sva četiri html fajla. Domaći zadatak pošaljite predmetnom asistentu na e-mail. Subject mail-a je CS105-DZ10.
+

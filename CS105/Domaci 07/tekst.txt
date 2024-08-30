@@ -1,0 +1,12 @@
+Kreirajte dve HTML stranice:
+
+Obe stranice imaju header.
+Obe stranice imaju vertikalni STICKY meni:
+Obe stranice imaju footer (FIXED).
+Stranice i elementi moraju da budu responzivni.
+Na prvoj stranici prikažite relativno i apsolutno pozicioniranje (možete koristiti bilo koje html elemente). Rešenje mora jasno da se razlikuje od onoga što je prikazano na vežbama. Raspodred na stranici mora da bude u skladu sa dodeljenim. Koristite <p> element da objasnite na koji način ste koristili relativno i apsolutno pozicioniranje u vašem slučaju.
+Dodeljen raspored na stranici određujete tako što saberete sa 1 ostatak pri deljenju broja indeksa sa brojem 4. Na primer: 5231%4 = 3, 3+1 =4 , raspored je prikazan na slici 1 pod brojem (4).
+Nakon što se ekran smanji na minimum 8ab px (gde su ab poslednje dve cifre vašeg broja indeksa, na primer za indeks 5231, minimalna veličina ekrana je 831) raspored elemenata bi trebalo da odgovara rasporedu prikazanom na slici 2.
+Na drugoj stranici na proizvoljan način prikažite upotrebu z-indeksa. Rešenje mora jasno da se razlikuje od onoga što je prikazano na vežbama. Potom pronađite html element koji do sada nismo obrađivali na vežbama i prikažite njegovu upotrebu. Na stranici ukratko objasnite čemu služi element.
+Tematika stranica može biti porizvoljna. Tekst i slike moraju da odgovaraju izabranoj tematici (ne koristite Lorem Ipsum tekst). Sadržaj i raspored na stranicama NE SME biti isti kao za prethodne domaće zadatke.
+Zadatak dostaviti kao arhivu CS105-DZ07-Ime_Prezime_BrojIndeksa.zip. Arhiva treba da sadrži dva HTML fajla: prva.html i druga.html. Domaći zadatak pošaljite predmetnom asistentu na e-mail. Subject mejla mora biti CS105-DZ07.

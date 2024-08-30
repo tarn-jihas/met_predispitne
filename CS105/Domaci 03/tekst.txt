@@ -1,0 +1,9 @@
+Kreirajte navedene html stranice
+Očekivano vreme izrade zadatka: 40min.
+
+Kreirati dve HTML stranice. Definišite tematiku sajta i sve slike, forme, tabele i tekstovi se odnose na tu tematiku (na primer: grafički dizajn).
+Svaka stranica sadrži odgovarajući naslov i meni (linkove ka drugim stranicama)
+Prva stranica treba da sadrži formu za unos podataka u skladu sa izabranom tematikom (za tematiku “grafički dizajn” na primer: prijava na webinar). Iskoristite minimum 5 različitih elemenata od navedenih: text, date, email, password, radio, checkbox, select, textarea, file, fieldset (+ legend), datalist, button. Koristite label tamo gde je neophodno. Forma mora da ima i dugme za slanje podataka.
+Na drugoj stranici treba da se nalazi popunjena tabela sa poljima koja odgovaraju formi sa druge stranice. Kreirajte tabelu koja ima odgovarajuća zaglavlja, i unesite minimum 3 reda sa podacima odgovaraju formi. Pozadina cele tabele je u boji #xxFyyF, gde su xx prve dve cifre vašeg broja indeksa, a yy poslednje dve cifre. Zaglavlja tabele formatirajte tako da budu ispisana fontom Tahoma, veličine 24px. Zaglavlja takođe imaju ivice u stilu “dashed” veličine 2px u boji #c11d5a.
+Kao pozadinu stranica postavite sliku po izboru. Slika ne sme da se ponavlja.
+Zadatak dostaviti kao arhivu CS105-DZ03-Ime_Prezime_BrojIndeksa.zip. Arhiva treba da sadrži dva HTML fajla: prikaz.html i unos.html. Domaći zadatak pošaljite predmetnom asistentu na e-mail.Subject mejla mora biti CS105-DZ03.

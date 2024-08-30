@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Otkrijte fascinantni svet kitova, njihove vrste i ponašanje">
+    <meta name="keywords" content="kitovi, morski sisari, okeani, plavi kit, orka">
+    <title>Čudesni svet kitova</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header,
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        h1 {
+            color: #0077be;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            color: #00a86b;
+            font-size: 1.8rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .resize-animation {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Čudesni svet kitova</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>Uvod u svet kitova</h2>
+            <p id="uvod">Kitovi su fascinantna stvorenja koja nastanjuju okeane širom sveta. Ovi ogromni morski sisari
+                igraju ključnu ulogu u morskim ekosistemima i oduvek su inspirisali ljudsku maštu svojom veličinom i
+                inteligencijom.</p>
+
+            <section>
+                <h2>Vrste kitova</h2>
+                <p id="vrste">Postoji mnogo različitih vrsta kitova, od ogromnog plavog kita do mnogo manjih vrsta kao
+                    što su beluge. Neki od najpoznatijih kitova uključuju orke, grbave kitove i kitove perajare.</p>
+                <img src="https://imgs.search.brave.com/sadsZj0SSc5avzVTvdAVX2lU4BM3NDSkbakra_MxJ7A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vZWtvYmxv/Zy5pbmZvL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE5LzAxL29y/a2ExLnBuZz9yZXNp/emU9NjQwLDQxNA"
+                    alt="Različite vrste kitova" class="resize-animation">
+            </section>
+
+            <section>
+                <h2>Ponašanje kitova</h2>
+                <p id="ponasanje">Kitovi su poznati po svom složenom društvenom ponašanju. Mnoge vrste komuniciraju
+                    pomoću pesama koje se mogu čuti na velikim udaljenostima pod vodom. Takođe su poznati po svojim
+                    impresivnim migracijama i akrobatskim skokovima iz vode.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Čudesni svet kitova. Sva prava zadržana.</p>
+    </footer>
+
+    <script>
+        const paragraphs = document.querySelectorAll('p');
+        const image = document.querySelector('img');
+        const colors = ['#FF5733', '#33FF57', '#3357FF', '#FF33F1', '#33FFF1'];
+
+        function getRandomColor() {
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        paragraphs.forEach(paragraph => {
+            paragraph.addEventListener('mouseover', () => {
+                paragraph.style.color = getRandomColor();
+            });
+
+            paragraph.addEventListener('mouseout', () => {
+                paragraph.style.color = 'black';
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            image.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                image.style.transform = 'scale(1)';
+            }, 300);
+        });
+    </script>
+</body>
+
+</html>

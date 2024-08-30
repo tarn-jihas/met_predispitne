@@ -1,0 +1,135 @@
+:root {
+  --color-lightest: #dad7cd;
+  --color-light: #a3b18a;
+  --color-medium: #588157;
+  --color-dark: #3a5a40;
+  --color-darkest: #344e41;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: var(--color-light);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #ff006e;
+  padding: 0.5rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 200px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-bottom: 0.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #ffbe0b;
+  color: #333;
+}
+
+nav ul li a.active {
+  background-color: #ffbe0b;
+  color: #333;
+}
+
+main {
+  margin-left: 220px;
+  padding: 1rem;
+}
+
+.special-font {
+  font: italic small-caps bold 24px/1.5 "Georgia", serif;
+}
+
+.course-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.course-list li {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  border-left: 5px solid #3a86ff;
+}
+
+.horizontal-text {
+  writing-mode: horizontal-tb;
+  text-orientation: mixed;
+  font-size: 1.2rem;
+  color: #ff006e;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.decorated-text {
+  text-decoration: underline wavy #ff006e 2px;
+}
+
+footer {
+  background-color: #3a86ff;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-left: 200px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav ul li {
+    margin-bottom: 0;
+  }
+
+  main,
+  footer {
+    margin-left: 0;
+  }
+}

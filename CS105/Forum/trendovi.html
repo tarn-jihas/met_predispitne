@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Istražite najnovije IT trendove koji oblikuju budućnost tehnologije i digitalnog sveta">
+    <meta name="keywords"
+        content="IT trendovi, tehnološke inovacije, digitalna transformacija, AI, blockchain, IoT, cloud computing, 5G">
+    <title>Inovativni IT Trendovi | Oblikovanje Digitalne Budućnosti</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #f39c12;
+            --background-color: #f4f7f9;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .trend-selector {
+            margin: 2rem 0;
+        }
+
+        #trendDropdown {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        .trend-info {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .trend-info h2 {
+            color: var(--secondary-color);
+            margin-top: 0;
+        }
+
+        .trend-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem 0;
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Inovativni IT Trendovi</h1>
+    </header>
+
+    <main class="container">
+        <section class="trend-selector">
+            <label for="trendDropdown">Izaberite tehnološki trend za detaljnije informacije:</label>
+            <select id="trendDropdown">
+                <option value="">-- Odaberite trend --</option>
+                <option value="ai">Veštačka inteligencija (AI)</option>
+                <option value="blockchain">Blockchain tehnologija</option>
+                <option value="iot">Internet stvari (IoT)</option>
+                <option value="cloud">Cloud computing</option>
+                <option value="5g">5G mreže</option>
+            </select>
+        </section>
+
+        <section class="trend-info">
+            <div class="trend-icon" id="trendIcon"></div>
+            <h2 id="trendTitle"></h2>
+            <p id="trendDescription"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Inovativni IT Trendovi. Sva prava zadržana.</p>
+    </footer>
+
+    <script>
+        const trendDropdown = document.getElementById('trendDropdown');
+        const trendIcon = document.getElementById('trendIcon');
+        const trendTitle = document.getElementById('trendTitle');
+        const trendDescription = document.getElementById('trendDescription');
+
+        const trendData = {
+            ai: {
+                icon: '🧠',
+                title: "Veštačka inteligencija (AI)",
+                description: "Veštačka inteligencija revolucionizuje industrije omogućavajući mašinama da uče, adaptiraju se i izvršavaju zadatke slične ljudskim. Od prepoznavanja govora do autonomnih vozila, AI transformiše način na koji živimo i radimo."
+            },
+            blockchain: {
+                icon: '🔗',
+                title: "Blockchain tehnologija",
+                description: "Blockchain pruža decentralizovanu, sigurnu platformu za transakcije i skladištenje podataka. Ova tehnologija ima potencijal da revolucionizuje finansije, lance snabdevanja i mnoge druge industrije, omogućavajući transparentnije i efikasnije procese."
+            },
+            iot: {
+                icon: '🌐',
+                title: "Internet stvari (IoT)",
+                description: "Internet stvari povezuje svakodnevne objekte na internet, omogućavajući prikupljanje i razmenu podataka. Od pametnih domova do industrijske automatizacije, IoT unapređuje efikasnost i stvara nove mogućnosti za inovacije."
+            },
+            cloud: {
+                icon: '☁️',
+                title: "Cloud computing",
+                description: "Cloud computing pruža fleksibilne, skalabilne resurse preko interneta. Ova tehnologija omogućava kompanijama da smanje troškove, poboljšaju saradnju i brzo implementiraju nove aplikacije i servise."
+            },
+            "5g": {
+                icon: '📡',
+                title: "5G mreže",
+                description: "5G mreže donose neverovatne brzine prenosa podataka, minimalno kašnjenje i poboljšanu povezanost. Ova tehnologija će omogućiti nove primene u IoT-u, autonomnim vozilima i proširenu realnost, transformišući mobilno iskustvo."
+            }
+        };
+
+        trendDropdown.addEventListener('change', function () {
+            const selectedTrend = this.value;
+            if (selectedTrend) {
+                trendIcon.textContent = trendData[selectedTrend].icon;
+                trendTitle.textContent = trendData[selectedTrend].title;
+                trendDescription.textContent = trendData[selectedTrend].description;
+            } else {
+                trendIcon.textContent = '';
+                trendTitle.textContent = '';
+                trendDescription.textContent = '';
+            }
+        });
+    </script>
+</body>
+
+</html>

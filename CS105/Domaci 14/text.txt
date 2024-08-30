@@ -1,0 +1,7 @@
+Opis domaćeg zadatka 14
+Krerajte sledeću HTML stranicu
+Očekivano vreme izrade zadatka: 40 min.
+
+Kreirajte HTML stranicu jedne prodavnice. Stranica ima meni, footer, responzivan dizajn. Osmislite sadržaj stranice. Na stranici se nalazi i lista proizvoda (ovo možete implementirati na proizvoljan način: liste, kartice i slično). Uz svaki proizvod postoji cena i dugme koje dodaje proizvod u listu želja. Klikom na dugme dodajete proizvod u listu želja. Listu želja prikazujete na stranici (na proizvoljan način: liste, tabele, accordion i slično). Uz svaki proizvod na listi želja postoji dugme za uklanjanje proizvoda sa liste želja.Na kraju liste želja izračunajte i prikažite ukupnu cenu proizvoda na listi želja. Implementirati navedene funkcionalnosti koristeći JQUERY. Za dizajn možete koristiti Bootstrap. Sami osmislite tematiku prodavnice i sadržaj na stranici.
+
+Zadatak dostaviti kao arhivu CS105-DZ14-Ime_Prezime_BrojIndeksa.zip. Arhiva treba da sadrži sve fajlove (html I js i css). Domaći zadatak pošaljite predmetnom asistentu na e-mail. Subject mail-a je CS105-DZ14.

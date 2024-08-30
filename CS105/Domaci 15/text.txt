@@ -1,0 +1,9 @@
+Opis domaćeg zadatka 15
+Krerajte sledeću HTML stranicu
+Očekivano vreme izrade zadatka: 40 min
+
+Kreirati stranicu na proizvoljnu temu. Stranica mora da sadrži naslove (minimum dva nivoa), minimum jedan paragraf i minimum jednu sliku. Slike moraju da se odnose na izabranu temu. Omogućiti interakciju korisnika sa stranicom. Kada korisnik pređe mišem preko paragrafa potrebno je da se promeni boja teksta u random boju. Nakon što se kursor skloni sa paragrafa potrebno je da se tekst vrati u crnu boju. Ovu funkcionalnost implementirati kroz JavaScript. Implementirajte tri eventListener-a za mouseOver i mouseOut događaje (gorespomenuta promena boja) i resize. Za resize događaj implementirajte proizvoljnu animaciju / interakciju / transformaciju.
+
+Možete kreirati niz u kom ćete dodati nekoliko boja i iz kog ćete nasumično birati boju. Stilizacijom kroz CSS definisati posebne fontove, boju i veličinu za naslove proizvoljno. Koristite strategiju SEO optimizacije. Koristite semantičke HTML element (section, article, aside… i pogledajte: https://www.w3schools.com/html/html5_semantic_elements.asp) Stranica mora da ima i header i footer. Dodajte i potrebne meta tagove.
+
+Zadatak dostaviti kao arhivu CS105-DZ15-Ime_Prezime_BrojIndeksa.zip. Arhiva treba da sadrži sve fajlove (html I js i css). Domaći zadatak pošaljite predmetnom asistentu na e-mail. Subject mail-a je CS105-DZ15.

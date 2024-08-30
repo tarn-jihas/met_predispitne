@@ -1,0 +1,12 @@
+Kreirajte dve HTML stranice:
+* Obe stranice imaju odgovarajući navigacioni meni:
+   * Meni prikazuje drugačiju stilizaciju za aktivnu stranicu
+   * Prikažite drugačiju stilizaciju za link preko kog korisnik prelazi mišem
+   * Koristite pseudo klase.
+   * Studenti sa NEPARNIM brojem indeksa kreiraju horizontalni meni, studenti sa PARNIM brojem indeksa kreiraju vertikalni meni.
+* Stranice i elementi moraju da budu responzivni.
+* Tematika stranica mora da bude ista kao i prethodne zadatke. Tekst i slike moraju da odgovaraju izabranoj tematici (ne koristite Lorem Ipsum tekst). Sadržaj i raspored na stranicama NE SME biti isti kao za prethodne domaće zadatke
+* Raspored na stranicama osmislite samostalno u skladu sa ostalim zahtevima.
+* Stranice moraju da sadrže: minimum jednu formu, jednu tabelu i jednu sliku. Obavezno primenite sledeće na navedenim elementima: margine, padding, border. Koristite box model. Koristite pseudo klase, pseudo elemente i selektore atributa.
+* Studenti sa NEPARNIM brojem indeksa moraju na jednom elementu da iskoriste senku teksta, dok studenti sa PARNIM brojem indeksa moraju da iskoriste senku sa zamućenjem na jednom elementu.
+* Iskoristite minimum 3 različite boje.

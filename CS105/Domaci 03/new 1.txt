@@ -1,0 +1,138 @@
+Simulacija Svemirske Borbe
+Kreirajte program koji simulira opasno putovanje svemirskog broda kroz neprijateljsku teritoriju.
+Početno stanje:
+
+Korisnik unosi ime svog svemirskog broda i bira jedan od tri tipa broda:
+
+Razarač (bonus na napad: +10% štete)
+Krstarica (bonus na odbranu: +10% energije štita)
+Nosač (bonus na popravke: +10% efikasnosti popravki)
+
+
+Svemirski brod počinje sa:
+
+1000 jedinica energije štita
+100% integriteta trupa
+3 modula za popravku
+50 jedinica torpeda
+
+
+Putovanje kroz neprijateljsku teritoriju podeljeno je na 7 sektora.
+
+Karakteristike neprijatelja:
+Neprijatelji se pojavljuju u tri tipa, svaki sa svojim karakteristikama:
+
+Laki izviđač:
+
+80 HP (Health Points)
+Napad: 10-15 štete
+70% šansa za pogodak
+
+
+Borbeni brod:
+
+150 HP
+Napad: 15-25 štete
+75% šansa za pogodak
+
+
+Teška krstarica:
+
+250 HP
+Napad: 20-30 štete
+80% šansa za pogodak
+
+
+
+Tok simulacije:
+Za svaki od 7 sektora:
+
+Prikaži detaljno trenutno stanje:
+Sektor: [trenutni sektor]/7
+Brod: [ime broda]
+Tip broda: [izabrani tip]
+Energija štita: [preostala energija]
+Integritet trupa: [integritet]%
+Moduli za popravku: [broj modula]
+Torpeda: [preostala torpeda]
+
+Generiši nasumičan događaj. Mogući događaji su:
+a) Neprijateljski brod (70% šansa) - nasumično odabran jedan od tri tipa
+b) Polje mina (20% šansa)
+c) Mirno putovanje (10% šansa)
+Ako je neprijateljski brod, prikaži njegove karakteristike:
+CopyNeprijatelj: [tip neprijatelja]
+HP neprijatelja: [HP]
+
+Korisnik bira jednu od 5 akcija:
+a) Ofanzivni manevar
+
+Troši 30 jedinica energije štita
+80% šansa za uspešan napad (90% za Razarač)
+Nanosi 20-30 štete neprijatelju (Razarač nanosi 10% više)
+
+b) Defensivni manevar
+
+Troši 20 jedinica energije štita
+Smanjuje šansu za primanje štete za 50% (60% za Krstaricu)
+
+c) Ispaliti salvu torpeda
+
+Troši 5 torpeda
+70% šansa za kritičan pogodak koji nanosi 40-60 štete
+
+d) Izvršiti hitne popravke
+
+Koristi 1 modul za popravku
+Obnavlja 30% integriteta trupa (Nosač obnavlja 40%)
+50% šansa da se obnovi 100 jedinica energije štita
+
+e) Pokušaj bekstva
+
+60% šansa za uspešno bekstvo
+Ako ne uspe, prima 10-20 štete i gubi 50 jedinica energije štita
+
+
+Nakon izbora akcije:
+
+Primeniti efekte akcije
+Ispisati detaljnu poruku o tome šta se dogodilo
+Prikazati preostale HP neprijatelja nakon napada igrača
+
+
+Neprijateljski napad (ako neprijatelj nije uništen i igrač nije pobegao):
+
+Šansa za pogodak i šteta se određuju prema tipu neprijatelja
+Ako je pogodak uspešan, igrač gubi energiju štita jednaku nanesenoj šteti
+Ako je energija štita na 0, šteta se nanosi integritetu trupa
+
+
+Polje mina (ako je to bio događaj):
+
+50% šansa da brod pretrpi 10-20 štete
+Igrač može da bira između pažljivog manevrisanja (80% šansa da izbegne štetu, ali troši 40 energije štita) ili brzog prolaska (50% šansa za štetu, troši 20 energije štita)
+
+
+Na kraju svakog sektora:
+
+5% šansa za kritično oštećenje koje zahteva momentalnu popravku (gubi se 20% integriteta ako se ne popravi)
+Ako je energija štita ispod 200, automatski se obnavlja za 50 jedinica
+
+
+Proveriti stanje broda:
+
+Ako je integritet trupa 0% ili manje, brod je uništen i igra se završava
+
+
+
+Kraj simulacije:
+
+Ako brod uspešno prođe svih 7 sektora, misija je uspešna
+Izračunati konačan skor baziran na preostaloj energiji štita, integritetu trupa i broju poraženih neprijatelja
+Ispisati detaljan izveštaj o misiji sa svim ključnim borbama i događajima
+
+Dodatni izazovi:
+
+Implementirati sistem nivoa za brod koji otključava nove sposobnosti
+Dodati mogućnost zarobljavanja neprijateljske tehnologije tokom borbe
+Uvesti sistem za nadogradnju oružja i štitova između sektora

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava za kurs stranog jezika</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.alphacoders.com/102/thumb-1920-1026345.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 20px;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        legend {
+            padding: 0 5px;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            margin-top: 5px;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            display: inline-block;
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="file"] {
+            margin-top: 5px;
+        }
+
+        h1{
+          text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="unos.html">Prijava za kurs</a>
+        <a href="prikaz.html">Pregled prijava</a>
+    </nav>
+    <h1>Prijava za kurs stranog jezika</h1>
+    <form action="prikaz.html" method="get">
+        <label for="ime">Ime i prezime:</label>
+        <input type="text" id="ime" name="ime" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="datum">Datum rođenja:</label>
+        <input type="date" id="datum" name="datum" required>
+
+        <label for="jezik">Izaberite željeni jezik:</label>
+        <select id="jezik" name="jezik" required>
+            <option value="">Izaberite jezik</option>
+            <option value="engleski">Engleski</option>
+            <option value="nemacki">Nemački</option>
+            <option value="francuski">Francuski</option>
+            <option value="spanski">Španski</option>
+            <option value="italijanski">Italijanski</option>
+        </select>
+
+        <label for="nivo">Nivo znanja:</label>
+        <select id="nivo" name="nivo" required>
+            <option value="">Izaberite nivo</option>
+            <option value="pocetni">Početni (A1-A2)</option>
+            <option value="srednji">Srednji (B1-B2)</option>
+            <option value="napredni">Napredni (C1-C2)</option>
+        </select>
+
+        <fieldset>
+            <legend>Željeni termin:</legend>
+            <div class="radio-group">
+                <label><input type="radio" name="termin" value="jutarnji" required> Jutarnji (8-12h)</label>
+                <label><input type="radio" name="termin" value="popodnevni"> Popodnevni (14-18h)</label>
+                <label><input type="radio" name="termin" value="vecernji"> Večernji (18-22h)</label>
+            </div>
+        </fieldset>
+
+        <label for="dodatni_jezici">Dodatni jezici koje želite učiti:</label>
+        <input type="text" id="dodatni_jezici" name="dodatni_jezici" list="jezici">
+        <datalist id="jezici">
+            <option value="Italijanski">
+            <option value="Ruski">
+            <option value="Kineski">
+            <option value="Japanski">
+        </datalist>
+
+        <label for="motivacija">Motivacija za učenje:</label>
+        <textarea id="motivacija" name="motivacija" rows="4"></textarea>
+
+        <label for="cv">Priložite svoj CV (opcionalno):</label>
+        <input type="file" id="cv" name="cv">
+
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="uslovi" required> Slažem se sa uslovima korišćenja</label>
+        </div>
+
+        <button type="submit">Pošalji prijavu</button>
+    </form>
+</body>
+
+</html>

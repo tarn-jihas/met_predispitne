@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/kontakt.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.classList.add('content-loaded');
+        });
+    </script>
+
+    <style>
+        body {
+            opacity: 0;
+            transition: opacity 0.3s ease-in;
+        }
+
+        body.content-loaded {
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>Kontakt</h1>
+            <nav>
+                <ul>
+                    <li><a href="./html/demo.html">Demo</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <aside class="aside1">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"><i class="fas fa-home"></i> Početna</a></li>
+                        <li><a href="./o-kompaniji.html"><i class="fas fa-building"></i> O kompaniji</a></li>
+                        <li><a href="./nas-tim.html"><i class="fas fa-users"></i> Naš tim</a></li>
+                        <li><a href="./delatnost.html"><i class="fas fa-briefcase"></i> Delatnost</a></li>
+                        <li><a href="./kontakt.html"><i class="fas fa-envelope"></i> Kontakt</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="main" role="main">
+                <section class="hero">
+                    <h1>Kontakt Forma</h1>
+                </section>
+
+                <form id="contactForm">
+                    <label for="imePrezime">Ime i prezime:</label>
+                    <input type="text" id="imePrezime" name="imePrezime">
+                    <span id="imePrezimeError" class="error"></span>
+
+                    <label for="naslov">Naslov poruke:</label>
+                    <input type="text" id="naslov" name="naslov">
+                    <span id="naslovError" class="error"></span>
+
+                    <label for="poruka">Tekst poruke:</label>
+                    <textarea id="poruka" name="poruka" rows="4"></textarea>
+                    <span id="porukaError" class="error"></span>
+
+                    <label for="telefon">Broj telefona:</label>
+                    <input type="tel" id="telefon" name="telefon">
+                    <span id="telefonError" class="error"></span>
+
+                    <label for="tip">Tip poruke:</label>
+                    <select id="tip" name="tip">
+                        <option value="">Izaberite tip poruke</option>
+                        <option value="pohvala">Pohvala</option>
+                        <option value="žalba">Žalba</option>
+                        <option value="pitanje">Pitanje</option>
+                        <option value="drugo">Drugo</option>
+                    </select>
+                    <span id="tipError" class="error"></span>
+
+                    <button type="submit">Pošalji</button>
+                </form>
+
+                <h2>Poslate poruke:</h2>
+                <ul id="poslatePortuke"></ul>
+
+            </main>
+        </div>
+
+        <footer class="footer">
+            © 2024 Marketing app. Sva prava zadržana.<br>
+            Autor: Strahinja Kešelj, Broj indeksa: 6159
+        </footer>
+    </div>
+    <script src="../js/form_validate.js"></script>
+</body>
+
+</html>

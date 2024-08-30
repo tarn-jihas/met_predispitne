@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 2 - Sabiranje vrednosti iz dva niza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="zadatak1.html">Zadatak 1</a>
+        <a href="zadatak2.html">Zadatak 2</a>
+        <a href="zadatak3.html">Zadatak 3</a>
+        <a href="zadatak4.html">Zadatak 4</a>
+    </nav>
+
+    <h1>Zadatak 2 - Sabiranje vrednosti iz dva niza</h1>
+
+    <div id="result"></div>
+
+    <script>
+        function sabiranjeNizova(niz1, niz2) {
+            return niz1.map((value, index) => value + niz2[index]);
+        }
+
+        // Kreiranje dva proizvoljna niza od 7 elemenata
+        const niz1 = [1, 3, 5, 7, 9, 11, 13];
+        const niz2 = [2, 4, 6, 8, 10, 12, 14];
+
+        const rezultat = sabiranjeNizova(niz1, niz2);
+
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = `
+            <p>Prvi niz: [${niz1.join(', ')}]</p>
+            <p>Drugi niz: [${niz2.join(', ')}]</p>
+            <p>Rezultat sabiranja: [${rezultat.join(', ')}]</p>
+        `;
+    </script>
+
+    <footer>
+        Strahinja Kešelj, Broj indeksa: 6159
+    </footer>
+</body>
+
+</html>

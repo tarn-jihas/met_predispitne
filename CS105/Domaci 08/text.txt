@@ -1,0 +1,10 @@
+Opis domaćeg zadatka - DZ08
+Kreirajte navedene HTML stranice
+Predviđeno vreme izrade zadatka je 40 minuta.
+
+Kreirajte dve HTML stranice:
+
+Na prvoj stranici prikažite proizvoljnu transformaciju koja nije obrađena u okviru lekcije (uključujući I vežbe).
+Na drugoj stranici primenite Bootstrap 5, dodajte meni, proizvoljan raspored grid-a i tekstualno objašnjenje transformacije sa prve stranice.
+Na drugoj stranici takođe dodajte I Bootstrap Card. Kartica je fleksibilan i proširiv kontejner sadržaja. Uključuje opcije za zaglavlja i podnožja, širok izbor sadržaja, kontekstualne boje pozadine I opcije prikaza. Primer kartica je dat u nastavku (izgled vase kartice se može razlikovati).
+Zadatak dostaviti kao arhivu CS105-DZ08-Ime_Prezime_BrojIndeksa.zip. Arhiva treba da sadrži dva HTML fajla: prva.html i druga.html. Domaći zadatak pošaljite predmetnom asistentu na e-mail. Subject mejla mora biti CS105-DZ08.

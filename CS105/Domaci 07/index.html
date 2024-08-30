@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prva stranica</title>
+  <link rel="stylesheet" href="stil.css" />
+</head>
+
+<body>
+  <header>
+    <h1>E-Shop!</h1>
+  </header>
+
+  <div class="content-wrapper">
+    <div class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Početna</a></li>
+          <li><a href="about.html">O nama</a></li>
+        </ul>
+      </nav>
+      <div class="dodatni-deo">
+        <div class="scroll-container">
+          <div class="scroll-text">
+            Dobrodošli! Kupi sad sa sniženjima!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div>
+        <h2>Najnovije ponude:</h2>
+        <div class="main-content">
+          <div class="main-box">
+            <div class="image-container">
+              <img src="https://img.gigatron.rs/img/products/large/image65cb32e8b7d62.jpg" alt="Tv slika" />
+              <span class="price">$1999</span>
+            </div>
+            <p>LG OLED evo C3</p>
+            <div class="discount-badge">Popust 20%</div>
+          </div>
+          <div class="main-box">
+            <div class="image-container">
+              <img src="https://img.gigatron.rs/img/products/large/image64f1792f590e2.jpg" alt="Tv slika" />
+              <span class="price">$1999</span>
+            </div>
+            <p>HISENSE 50A6K Smart</p>
+            <div class="discount-badge">Popust 20%</div>
+          </div>
+          <div class="main-box">
+            <div class="image-container">
+              <img src="https://img.gigatron.rs/img/products/large/image65ccc815a3a46.jpg" alt="Tv slika" />
+              <span class="price">$1999</span>
+            </div>
+            <p>LG UHD UR78</p>
+            <div class="discount-badge">Popust 15%</div>
+          </div>
+
+
+          <p class="explanation">
+            U ovom primeru, koristili smo relativno pozicioniranje za .image-container, što nam omogućava da apsolutno
+            pozicioniramo .price unutar njega. Ovo stvara efekat "cene preko slike". Dodatno, .discount-badge je
+            relativno
+            pozicioniran u odnosu na .main-box, demonstrirajući kako relativno pozicioniranje može pomeriti element iz
+            njegovog
+            normalnog toka bez uticaja na druge elemente.
+          </p>
+
+
+
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-text">
+      <p>&copy; 2024 E-Shop. Sva prava zadržana.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

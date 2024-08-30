@@ -1,0 +1,25 @@
+Napraviti HTML stranicu sa Javascript-om u eksternoj datoteci koja će imati sledeći sadržaj i funkcionalnosti:
+
+Naslov dokumenta će sadržati vaše ime, prezime i broj indeksa
+Stranicu stilizovati bojom
+Podnaslov će sadržati šifru i naziv predmeta
+Veličina fonta podnaslova će sadržati poslednje dve vrednosti broja Vašeg indeksa
+Omogućite unos za sve vaše predispitne obaveze iz predmeta (15 domaćih zadataka, projektni zadatak i ukupan broj negativnih poena)
+Na dnu će se nalazi dugme “Proveri uslov”
+Kada se klikne na dugme, potrebno je da skripta proveri da li imate uslov za izlazak na ispit (minimalno 35 poena na svim predispitnim obavezama) - negativne poene oduzimate!
+Kao rezultat, bez brisanja svog unosa, na dnu treba ispisati:
+Ime i prezime – ima uslov (boldovano i plavom bojom) za izlazak na ispit (italic) - ukoliko student ima uslov za izlazak na ispit
+
+iIi Ime i prezime – nema uslov (boldovano i crvenom bojom) za izlazak na ispit (italic) - ukoliko nema uslov za izlazak na ispit)
+
+Ispod dugmeta za proveru uslova napraviti još jedno polje gde možete uneti broj poena sa ispita i ispod njega dugme koje izračunava konačnu ocenu sa nazivom “Izračunaj ocenu”.
+Rezultat klika na dugme “Izračunaj ocenu” daje ocenu (bez brisanja svega prethodno unetog) po sledećoj stavkama:
+Do 50 poena - ocena 5
+51-60 poena - ocena 6
+61-70 poena - ocena 7
+71-80 poena - ocena 8
+81-90 poena - ocena 9
+91-100 poena - ocena 10
+Krajnji prikaz ocene obojiti bojom po želji.
+
+Zadatak dostaviti kao arhivu CS105-DZ09-Ime_Prezime_BrojIndeksa.zip. Domaći zadatak pošaljite predmetnom asistentu na e-mail.

@@ -1,0 +1,12 @@
+Opis domaćeg zadatka - DZ04
+Kreirajte navedene HTML stranice
+Predviđeno vreme izrade zadatka je 40 minuta.
+
+Kreirajte dve html stranice:
+
+Prva stranica (pocetna.html) sadrži iframe koji prikazuje drugu stranicu, I sliku koja se menja u zavisnosti od veličine ekrana.
+Druga stranica (druga.html) sadrži minimum 5 različitih blok elementa I minimum 3 različita inline elementa spomenutih u lekciji.
+Kreirajte po minimum 3 klase i id-jeva koje ćete koristiti za stilizaciju elemenata.Stilizacija elemenata obuhvata: pozadine, boje, pozicioniranje, font, veličinu, poravnanje i slično.
+Stranice i elementi moraju da budu responzivni.
+Tematika stranica mora da bude ista kao i za DZ03. Tekst i slike moraju da odgovaraju izabranoj tematici (ne koristite Lorem Ipsum tekst).
+Zadatak dostaviti kao arhivu CS105-DZ04-Ime_Prezime_BrojIndeksa.zip. Arhiva treba da sadrži dva HTML fajla: pocetna.html i druga.html. Domaći zadatak pošaljite predmetnom asistentu na e-mail.Subject mejla mora biti CS105-DZ04.

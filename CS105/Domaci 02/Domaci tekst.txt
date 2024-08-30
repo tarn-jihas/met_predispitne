@@ -1,0 +1,17 @@
+Kreirajte navedene html stranice
+Očekivano vreme izrade zadatka: 40 minuta.
+
+Kreirati HTML stranicu pocetna.html koja sadrži:
+
+Vaše ime, prezime i broj indeksa (centar stranice)
+Smer koji studirate
+Početno slovo imena i prezimena treba da budu boldovani
+Linkove ka stranicama film.html i serija.html
+Pozadina dokumenta je #xxxxBB, gde je xxxx broj indeksa.
+Preostale tri stranice moraju da imaju link koji vraća na početnu stranu. Vodite računa da sva slova mogu biti ispisana, uključujući čšđžć. Na navedenim stranicama potrebno je iskoristiti minimum 3 od sledećih elemenata: <strong>, <em>, <mark>, <small>, <del>, <ins>, <sub> i <sup>.
+
+Stranica film.html mora da sadrži informacije o omiljenim filmovima i citatima iz filma (minimum 3). Za citat koristite odgovarajuće tagove. Dodati minimum 2 nivoa naslova i paragraf. Koristite bold i italic tekst. Za svaki film dodati sliku kao hipervezu koja vodi ka odgovarajućoj stranici na imdb sajtu.
+
+Stranica serija.html treba da sadrži informacije o omiljenim serijama (minimum 2). Svaki naziv serije potrebno je prikazati kao naslov u različitoj boji, fontu i veličini. Za paragraph (informacije o serijama) koristiti različite pozadite i okvire teksta.
+
+Sve HTML fajlove dodati u arhivu I dostaviti pod nazivom CS105-DZ02-Ime_Prezime_BrojIndeksa.zip. Domaći zadatak pošaljite predmetnom asistentu na e-mail. Subject mejla mora biti CS105-DZ02.

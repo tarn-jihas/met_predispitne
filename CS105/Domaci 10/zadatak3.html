@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 3 - Manipulacija objektima i nizovima</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="zadatak1.html">Zadatak 1</a>
+        <a href="zadatak2.html">Zadatak 2</a>
+        <a href="zadatak3.html">Zadatak 3</a>
+        <a href="zadatak4.html">Zadatak 4</a>
+    </nav>
+
+    <h1>Zadatak 3 - Manipulacija objektima i nizovima</h1>
+
+    <div id="result"></div>
+
+    <script>
+        // Kreiranje niza od 5 proizvoljnih objekata
+        const objekti = [
+            { ime: "Ana", godine: 25, grad: "Beograd" },
+            { ime: "Marko", godine: 30, grad: "Novi Sad" },
+            { ime: "Jelena", godine: 28, grad: "Niš" },
+            { ime: "Nikola", godine: 35, grad: "Kragujevac" },
+            { ime: "Milica", godine: 22, grad: "Subotica" },
+            
+        ];
+
+        // Funkcija za sortiranje niza objekata
+        function sortirajObjekte(niz) {
+            return niz.sort((a, b) => b.ime.localeCompare(a.ime));
+        }
+
+        // Funkcija za proveru da li su dva objekta identična
+        function daLiSuIdentični(obj1, obj2) {
+            return JSON.stringify(obj1) === JSON.stringify(obj2);
+        }
+
+        // Funkcija za proveru da li je objekat prazan
+        function daLiJePrazan(obj) {
+            return Object.keys(obj).length === 0;
+        }
+
+        // Sortiranje niza
+        const sortiranNiz = sortirajObjekte([...objekti]);
+
+        // Provera identičnosti objekata
+        const identičniObjekti = daLiSuIdentični(objekti[0], objekti[1]);
+
+        // Provera da li je objekat prazan
+        const punObjekat = daLiJePrazan(objekti[0]);
+
+
+        // Prikaz rezultata
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = `
+            <h2>Originalni niz:</h2>
+            <pre>${JSON.stringify(objekti, null, 2)}</pre>
+            
+            <h2>Sortirani niz (prema imenu, obrnut abecedni redosled):</h2>
+            <pre>${JSON.stringify(sortiranNiz, null, 2)}</pre>
+            
+            <h2>Da li su prvi i drugi objekat identični?</h2>
+            <p>${identičniObjekti ? 'Da' : 'Ne'}</p>
+            
+            <h2>Da li je prazan objekat prazan?</h2>
+            <p>${punObjekat ? 'Da' : 'Ne'}</p>
+
+        
+        `;
+    </script>
+
+    <footer>
+       Strahinja Kešelj, Broj indeksa: 6159
+    </footer>
+</body>
+
+</html>

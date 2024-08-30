@@ -1,0 +1,60 @@
+Opis domaćeg zadatka - DZ13
+Uradite sledeće
+Očekivano vreme izrade zadatka: 40 min.
+
+Svaki student radi JEDAN zadatak sa spiska. Ostali zadaci mogu da posluže za vežbanje i pripremu ispita, ali se ne šalju na pregled asistentima.
+Student zadatak bira tako što svoj broj indeksa podeli sa 7 i ostatku koji dobije doda 1. Primer: Broj indeksa 2318 % 7 = 1, 1 + 1 = 2– student radi 2. zadatak. Zadatak dostaviti kao arhivu CS105-DZ11-Ime_Prezime_BrojIndeksa.zip. Arhiva treba da sadrži oba fajla (html I js). Domaći zadatak pošaljite predmetnom asistentu na e-mail. Subject mail-a je CS105-DZ13.
+Napravite fajl koji ćete nazvati brIndeksa.js i brIndeksa.html gde ćete pozvati JavaScript fajl. Zadaci su sledeći:
+
+1. Napravite niz odevniPredmet koji ćete popuniti sledećim nizovima (minimum 5): [[“stanje”, “obučeno”], [“veličina”, 33], [“brend”, “ABC”], [“tip”:”majica”]]
+Svaki odevni predmet ima stanje koje može biti “obučeno” ili “skinuto", veličinu I brend i tip (majica ili odelo).
+Napišite funkciju koja će od navedenog niza vratiti objekate sa parovima key:value, i na osnovu tipa smesiti objekat u niz odelo ili majica.
+Potom napišite funkciju koja će objektima dodati key cena i to tako da je cena odela slučajan broj od 5.000 do 10.000, a cena majice slučajan broj od 500 do 3000.
+Potom napišite funkciju koja će prebrojati koliko majica ima cenu veću od 1500, odnosno koliko odela ima cenu veću od 7500.
+Na kraju napišite toString funkciju koja će prikazati nizove na proizvoljan način.
+2. Napravite niz oblik3D koji ćete popuniti sledećim nizovima (minimum 5): [[“bojaIvice”, “plava”], [“popunjen”, true], [“boja popune”, “crvena”], [“tip”:”lopta”]]
+Svaki oblik3D ima polja boja Ivice, da li je popunjen I boja popune I i tip (lopta ili kocka).
+Napišite funkciju koja će od navedenog niza vratiti objekate sa parovima key:value, i na osnovu tipa smesiti objekat u niz kocka ili lopta.
+Potom napišite funkciju koja će objektima dodati key stranica (kocki) tj. poluprečnik( lopti) i dodeliti im neku random vrednost.
+Potom napišite funkciju koja će izračunati zapremine i dodati im key i value.
+Na kraju napišite toString funkciju koja će prikazati nizove na proizvoljan način.
+
+
+Zadaci 3-5
+Birate jedan zadatak
+3. Napravite niz racunar koji ćete popuniti sledećim nizovima (minimum 5): [[“cpu”, “x”], [“ram”, y], [“gpu”, “z”], [“tip”:”desktop”]]
+Svaki racunar od polja ima cpu, ram, gpu I i tip (desktop ili laptop).
+Napišite funkciju koja će od navedenog niza vratiti objekate sa parovima key:value, i na osnovu tipa smesiti objekat u niz desktop ili laptop.
+Potom napišite funkciju koja će objektima dodati key cena i to tako da je cena desktop računara slučajan broj od 40.000 do 120.000, a cena laptop računara slučajan broj od 60.000 do 200.000.
+Potom napišite funkciju koja će prebrojati koliko desktop računara ima cenu manju od 80.000, odnosno koliko laptopova ima cenu manju od 100.000.
+Na kraju napišite toString funkciju koja će prikazati nizove na proizvoljan način.
+4. Napravite niz nekretnina koji ćete popuniti sledećim nizovima (minimum 5): [[“adresa”, “x”], [“kvadratura”, y], [“vlasnik”, “z”], [“tip”:”stan”]]
+Svaka nekretnina od polja ima adresu, kvadraturu I ime vlasnika i tip (stan ili kuća).
+Napišite funkciju koja će od navedenog niza vratiti objekate sa parovima key:value, i na osnovu tipa smesiti objekat u niz stan ili kuca.
+Potom napišite funkciju koja će objektima dodati key cena i to tako da računa cenu nekretnine za stan po formuli 1200 * kvadratura, a za kuću 1000 * kvadratura.
+Potom napišite funkciju koja će prebrojati koliko kuća ima cenu jednaku 80.000, odnosno koliko stanova ima cenu jednaku od 100.000.
+Na kraju napišite toString funkciju koja će prikazati nizove na proizvoljan način.
+5. Napravite niz apoteka koji ćete popuniti sledećim nizovima (minimum 5): [[“naziv”, “x”], [“prihod”, y], [“adresa”, “z”], [“tip”:”drzavna”]]
+Svaka apoteka od polja ima naziv, prihod I adresu i tip (državna ili privatna).
+Napišite funkciju koja će od navedenog niza vratiti objekate sa parovima key:value, i na osnovu tipa smesiti objekat u niz drzavneApoteke ili privatneApoteke.
+Potom napišite funkciju koja će objektima dodati key porez i to tako da ukoliko je apoteka privatna porez je 20% prihoda, dok ukoliko je apoteka državna porez je 5% prihoda.
+Potom napišite funkciju koja će sabrati poreze svih državnih apoteka i svih privatnih apoteka (posebno) i prikazati.
+Na kraju napišite toString funkciju koja će prikazati nizove na proizvoljan način.
+
+
+Zadaci 6-7
+Primer: Broj indeksa 2318 % 7 = 1, 1 + 1 = 2– student radi 2.
+6. Napravite niz klinika koji ćete popuniti sledećim nizovima (minimum 5):
+[[“naziv”, “x”], [“brojZaposlenih”, y], [“brojPacijenata”, z], [“tip”:”drzavna”]]
+Svaka klinika od polja ima naziv, broj zaposlneih I broj pacijenata i tip (državna ili privatna).
+Napišite funkciju koja će od navedenog niza vratiti objekate sa parovima key:value, i na osnovu tipa smesiti objekat u niz drzavneKlinike ili privatneKlinike.
+Potom napišite funkciju koja će objektima dodati key plateZaposlenih i to tako da u privatnoj klinici se ukupne plate računaju po formuli brZaposlenih*brPacijenata*3000, dok se u državnoj klinici ukupne plate računaju prema formuli brZaposlenih*brPacijenata*4000
+Potom napišite funkciju koja će sabrati izdatke za plate svih državnih klinika i svih privatnih klinika(posebno) i prikazati.
+Na kraju napišite toString funkciju koja će prikazati nizove na proizvoljan način.
+7. Napravite niz sektor koji ćete popuniti sledećim nizovima (minimum 5):
+[[“naziv”, “x”], [“brojZaposlenih”, y], [“rukovodilac”, “z”], [“tip”:”IT”]]
+Svaki sektor od polja ima naziv, broj zaposlneih I ime rukovodioca i tip (IT ili HR).
+Napišite funkciju koja će od navedenog niza vratiti objekate sa parovima key:value, i na osnovu tipa smesiti objekat u niz itSektorili hrSektor.
+Potom napišite funkciju koja će objektima dodati key plateZaposlenih i to tako da u ITsektoru plate računajte prema formuli 1000000/brZaposlenih*0,8+5000, dok u HR prema formuli: 1000000/brZaposlenih*0,8
+Potom napišite funkciju koja će za oba sektora zajedno prebrojati koliko sektora ima plate veće od 10000.
+Na kraju napišite toString funkciju koja će prikazati nizove na proizvoljan način.
